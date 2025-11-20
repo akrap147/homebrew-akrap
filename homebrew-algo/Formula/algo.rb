@@ -8,6 +8,7 @@ class Algo < Formula
   depends_on "openjdk@17"
 
   def install
+    chmod "+x", "gradlew"
     system "./gradlew", "clean", "build"
 
     # build 결과 jar 저장
