@@ -8,12 +8,7 @@ class Algo < Formula
   depends_on "openjdk@17"
 
   def install
-    system "./gradlew", "clean", "build"
-
-    # build 결과 jar 저장
-    libexec.install "app/build/libs/app.jar"
-
-    # 실행 스크립트 생성
+    libexec.install "app.jar"
     (bin/"algo").write <<~EOS
       #!/bin/bash
       exec "#{Formula["openjdk@17"].opt_bin}/java" -jar "#{libexec}/app.jar" "$@"
