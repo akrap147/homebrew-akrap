@@ -1,8 +1,8 @@
 class Algo < Formula
   desc "백준 알고리즘 문제 자동 복습 스케줄링 CLI"
   homepage "https://github.com/akrap147/algo-review-cli"
-  url "https://github.com/akrap147/algo-review-cli/releases/download/v0.1.0/app.jar"
-  sha256 "c6d9d5775cf53775d65d647bf6d084fb8e95c4c0affb157e93c5c1c0b658d851"
+  url "https://github.com/akrap147/algo-review-cli/releases/download/v0.1.8/app.jar"
+  sha256 "9104d866b4f9921142123eb2eaee40e1843628039bed7787b24bdc1b46ff179d"
   license "MIT"
 
   depends_on "openjdk@17"
